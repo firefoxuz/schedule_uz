@@ -3,8 +3,8 @@
 
 
 ## Installation
-1. Clone the repository: git clone https://github.com/firefoxuz/schedule_uz.git
-2. Navigate to the project directory: `cd schedule_uz`
+1. Clone the repository: `git clone https://github.com/firefoxuz/schedule_uz.git`
+2. Navigate to the project directory: `cd schedule_uz/src`
 3. Install the dependencies:
 4. `composer install`
 5. `npm install`
@@ -16,19 +16,18 @@
 11. Build the assets: `npm run dev` or `npm run production`
 12. Start the development server: `php artisan serve`
 13. The application will be available at http://localhost:8000.
+
 ## Installation using docker
-1. Clone the repository: git clone https://github.com/firefoxuz/schedule_uz.git
+1. Clone the repository: `git clone https://github.com/firefoxuz/schedule_uz.git`
 2. Navigate to the project directory: `cd schedule_uz`
-3. Create a copy of the .env file: `cp .env.example .env`
-4. `docker-compose up -d --build app` to build docker container
+3. Create a copy of the .env file: `cp src/.env.example src/.env`
+4. `docker-compose up -d --build` to build docker container
 5. Install the dependencies:
 6. `docker-compose run --rm composer install`
-7. `docker-compose run --rm npm install`
-8. `docker-compose run --rm npm run dev`
-9. Key generate `docker-compose run --rm artisan key:generate`
-10. Migrating `docker-compose run --rm artisan migrate`
-11. Seeding `docker-compose run --rm artisan db:seed`
-12. 
+7. Key generate `docker-compose run --rm artisan key:generate`
+8. Migrating `docker-compose run --rm artisan migrate`
+9. Seeding `docker-compose run --rm artisan db:seed`
+10. Creating new user `docker-compose run --rm artisan user:create admin@admin.com 123456`
 
 ## Usage
 This project can be used as a starting point for any web application built with Laravel 9.
