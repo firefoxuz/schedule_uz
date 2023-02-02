@@ -28,6 +28,17 @@
 8. Migrating `docker-compose run --rm artisan migrate`
 9. Seeding `docker-compose run --rm artisan db:seed`
 10. Creating new user `docker-compose run --rm artisan user:create admin@admin.com 123456`
+11. The application will be available at http://localhost:80.
+
+### Iformation
+
+The following are built for our web server, with their exposed ports detailed:
+
+- **nginx** - `:80`
+- **mysql** - `:3306`
+- **php** - `:9000`
+- **redis** - `:6379`
+- **mailhog** - `:8025` 
 
 ## Usage
 This project can be used as a starting point for any web application built with Laravel 9.
